@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo_R {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+}
+/* Loading アイコンの大きさ設定　*/
+#splash_logo_R img {
+  width:50px;
+}
+
+#splash_logo_I {
+  position: fixed;
+  top: 50%;
+  left: 37.5%;
+}
+#splash_logo_I img {
+  width:10px;
+}
+
+#splash_logo_N {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+#splash_logo_N img {
+  width:50px;
+}
+
+#splash_logo_T {
+  position: fixed;
+  top: 50%;
+  left: 62.5%;
+}
+#splash_logo_T img {
+  width:50px;
+}
+
+#splash_logo_O {
+  position: fixed;
+  top: 50%;
+  left: 75%;
+}
+#splash_logo_O img {
+  width:85px;
+}
+
+
+
+
+
+
+
+/* fadeUpをするアイコンの動き */
+
+.fadeUp_R{
+animation-name: fadeUpAnime;
+animation-duration:2.4s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+.fadeUp_I{
+  animation-name: fadeUpAnime;
+  animation-duration:2.8s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+.fadeUp_N{
+animation-name: fadeUpAnime;
+animation-duration:3.2s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+.fadeUp_T{
+  animation-name: fadeUpAnime;
+  animation-duration:3.6s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+.fadeUp_O{
+animation-name: fadeUpAnime;
+animation-duration:4.0s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+    
+
+@keyframes fadeUpAnime{
+  0% {
+    opacity: 0;
+  transform: translateY(-1000px);
+  }
+  40% {
+    opacity: 1;
+  transform: translateY(0px);
+  }
+  50% {
+    opacity: 2;
+  transform: translateY(0px);
+  }
+  60% {
+    opacity: 3;
+  transform: translateY(0px);
+  }
+  100% {
+    opacity: 4;
+  transform: translateY(-1000px);
+  }
+}
+
+
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+#container{
+  width:100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a{
+  color: #333;
+}
+
+a:hover{
+   text-decoration: none;   
+}
+
+
